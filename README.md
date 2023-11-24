@@ -2,17 +2,17 @@
 
 ## Setup:
 - Clone the repo.
-- Make sure you have node/npm installed.
+- Make sure you have [node/npm](https://nodejs.org/en/) installed.
 - Install sass compiler `npm install -g sass`.
 
-## Testing:
+## Development:
 - Open `index.html` in your browser.
 - To compile your SCSS into CSS, run `npm run build` in your terminal.
 
 ## Task:
-- We would like you to write the JS and SCSS/CSS to show a specific person's details.
+- We would like you to write the JS and SCSS/CSS to show a specific person's details based off their ID.
 - The user should enter a number into the input and click search, this will display the corresponding users details below.
-- Some of the code has been written for you but feel free to change it if you feel necessary.
+- Some of the code has been written for you but feel free to change it if you want.
 - The person data is coming from [jsonplaceholder](https://www.jsonplaceholder.org/). Read the docs to see how to retrieve specific user data.
 - Clean code is _key!_
 - Refer to the screenshots below for how it should look.
