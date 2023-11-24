@@ -14,6 +14,7 @@
 - The user should enter a number into the input and click search, this will display the corresponding users details below.
 - Some of the code has been written for you but feel free to change it if you want.
 - The person data is coming from [jsonplaceholder](https://www.jsonplaceholder.org/). Read the docs to see how to retrieve specific user data.
+- For the person thumbnail, just use a randomly generated image using this link `https://i.pravatar.cc/300`.
 - Clean code is _key!_
 - Refer to the screenshots below for how it should look.
 
