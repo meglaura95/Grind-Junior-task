@@ -1,4 +1,3 @@
-// Rudimentary reset
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -7,4 +6,174 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: left;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  padding: 18px 10px;
+  margin-right: 10px;
+  border-radius: 7px;
+  
+}
+
+.form__btn {
+  width: auto; 
+  padding: 16px 270px; 
+  background-color: #222222;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.form__btn:hover {
+  background-color: #000;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.user-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 10px;
+ width: auto;
+  box-sizing: border-box;
+}
+
+.user-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 8px;
+  margin-right: 0px;
+
+}
+
+.user-card-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card h2 {
+  background-color: #222222;
+  color: #fff;
+  padding: 8px 0 8px 0;
+  padding-right: 380px;
+  text-align: left;
+  width: 100%;
+  
+}
+
+.user-card li {
+  list-style: none;
+  margin: 0;
+}
+
+.user-card p {
+  margin: 5px 0;
+}
+
+.user-card p:first-child {
+  margin-top: 10px;
+}
+/*My attempt at Mobile responsiveness, haha*/
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: center;
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form__input,
+  .form__btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .form__btn {
+    margin-top: 10px;
+    padding: 20px
+  }
+
+  .user-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .user-card img {
+    width: 100%;
+    margin-right: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #222222;
+  }
+
+  .user-card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .user-card h2 {
+    width: 100%;
+    margin-right: 0;
+    padding: 5px 150px 5px 0px;
+  text-align: left;
+  }
+  
+  .user-name {
+background-color: #222222;
+  }
+
+  .user-card p {
+    text-align: left;
+  } 
 }
